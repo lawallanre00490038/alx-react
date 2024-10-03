@@ -4,6 +4,12 @@
 // learn more: https://github.com/testing-library/jest-dom
 // import '@testing-library/jest-dom';
 
+import { TextEncoder, TextDecoder } from 'util';
+
+global.TextEncoder = TextEncoder;
+global.TextDecoder = TextDecoder;
+
+
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-17-updated';
 
